@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #F5F5F5; /* Light Gray background */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+transition: box-shadow 0.3s ease;
+}
+header:hover {
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+#scrollToTopBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+/* Your existing styles... */
+transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#scrollToTopBtn.show {
+display: block;
+opacity: 1; /* Show the button */
+}
+
+
+.nav-item {
+    font-size: x-large;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.nav.nav-pills li.nav-item a.nav-link:hover {
+    background-color: #F99417; /* Vibrant Orange on hover */
+    color: #F5F5F5; /* White on hover */
+}
+
+.nav-link {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* Adjust text styles */
+.col-lg-6 .h2 {
+    color: #F99417; /* Vibrant Orange text color */
+    font-size: 35px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.col-lg-6 .display-5.fw-bold.text-body-emphasis.lh-1.mb-3 {
+    font-size: 50px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Resume Section Styles */
+.resume-title {
+    background-color: #F99417; /* Vibrant Orange background */
+    border: 5px solid transparent;
+    background-clip: padding-box;
+    background-image: linear-gradient(to right, #F99417, #ffffff); /* Gradient background */
+    border-radius: 50px;
+    width: 80%; /* Set a fixed width for the .resume-title */
+    margin: 0 auto; /* Center-align the element horizontally */
+}
+
+.resume-section {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F5F5F5; /* Light Gray background */
+    border-radius: 10px;
+}
+
+.section-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4D4C7D; /* Purple-Blue text color */
+    margin-top: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.resume-item {
+    margin-bottom: 20px;
+    background-color: #F5F5F5; /* Light Gray background */
+    padding: 15px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-item:hover {
+    transform: translateY(-5px);
+}
+
+.resume-item h4 {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #363062; /* Dark Purple-Blue text color */
+    font-family: 'Playpen Sans', cursive;
+}
+
+.resume-item p {
+    margin: 5px 0;
+    font-size: larger;
+}
+.image-container {
+/* Your existing styles... */
+overflow: hidden;
+perspective: 1000px;
+}
+
+.image-container img {
+/* Your existing styles... */
+transition: transform 0.5s ease;
+transform: translateZ(0);
+}
+
+.image-container:hover img {
+transform: scale(1.1); /* Adjust scale as needed */
+}
+
+
+.resume-item ul {
+    list-style-type: disc;
+    margin: 5px 0 5px 20px;
+}
+.btn-primary {
+/* Your existing styles... */
+background-image: linear-gradient(to right, #3200f9, rgb(200, 181, 14)); /* Gradient background */
+background-size: 200% auto;
+transition: background-position 0.6s;
+font-size: x-large;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+border-radius: 50% 60% 50% 10%;
+}
+
+.btn-primary:hover {
+background-position: right center; /* Shift gradient on hover */
+}
+
+.resume-item ul li {
+    list-style: none;
+}
+
+#Certifications {
+    background-color: #eaefef;
+}
+
+#reviews {
+    background-color: #eaefef;
+}
+
+/* About Me Styles */
+#whoami {
+    font-family: 'Playpen Sans', cursive;
+    background-color: #F99417; /* Vibrant Orange background */
+    border-radius: 70% 30%;
+}
+
+.lead {
+    font-family: 'Playpen Sans', cursive;
+    font-size: larger;
+}
+
+.lead strong {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+/* Contact Me Styles */
+.footer {
+    background-color: #363062; /* Dark Purple-Blue background for the footer */
+    color: #F5F5F5; /* White text color for the links */
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.footer .nav {
+    flex-direction: row; /* Adjusted to horizontal alignment */
+    align-items: center;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-item a.nav-link {
+    padding: 3; 
+    margin-top: 35px;/* Removed padding for cleaner look */
+}
+
+.nav-item a.nav-link img {
+    opacity: 0.8; /* Reduce opacity for the icons */
+    width: 70px;
+    height: 70px;
+    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.nav-item a.nav-link:hover img {
+    opacity: 1; /* Restore opacity on hover */
+    width: 80px;
+    height: 80px;
+}
+
+/* Additional customizations for the heading font size */
+.display-1.text-center.resume-title1 {
+    font-size: 48px; /* Increase font size for the main heading */
+}
+
+.display-4 {
+    font-size: 36px; /* Increase font size for the sub-heading */
+}
+
+.display-4 text-body-emphasis {
+    color: #363062; /* Dark Purple-Blue text color */
+}
+
+.display-4.text-body-emphasis.text-center {
+    font-family: 'Playpen Sans', cursive;
+}
+.cntct{
+    color: white;
+    font-weight: 900S;
+}
+header.scrolled {
+background-color: #fff; /* Change background color on scroll */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+transition: background-color 0.3s ease; /* Smooth transition */
+}
+.certifications-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Two certifications in a row */
+gap: 20px; /* Gap between certifications */
+}
+
+.certification {
+border: 1px solid #ccc; /* Add borders or styling as needed */
+padding: 10px;
+}
+.reviews-grid {
+display: flex;
+flex-direction: column;
+gap: 0px; /* Space between reviews */
+}
+
+.resume-item.customer-satisfaction {
+padding-bottom: 20px; /* Optional padding if needed */
+}
+
+.reviews-grid img {
+max-width: 80%; /* Adjust the image's maximum width */
+height: auto; /* Maintain aspect ratio */
+border: 1px solid #ccc; /* Add borders around each image */
+border-radius: 5px; /* Optional border-radius for the images */
+margin-bottom: 20px; /* Space between images */
+}
+/* For small screens */
+.certifications-grid {
+display: block; /* Change to a single column layout */
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+.certifications-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Two certifications in a row */
+gap: 20px; /* Gap between certifications */
+}
+}
